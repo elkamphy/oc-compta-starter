@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/<github username>/<repo name>.svg?branch=master)](https://travis-ci.org/<github username>/<repo name>) [![Coverage Status](https://coveralls.io/repos/github/<github username>/<repo name>/badge.svg?branch=master)](https://coveralls.io/github/<github username>/<repo name>?branch=master)
+[![Build Status](https://travis-ci.org/elkamphy/oc-compta-starter.svg?branch=master)](https://travis-ci.org/elkamphy/oc-compta-starter) [![Coverage Status](https://coveralls.io/repos/github/elkamphy/oc-compta-starter/badge.svg?branch=master)](https://coveralls.io/github/elkamphy/oc-compta-starter?branch=master)
 
 # MyERP 
 
@@ -40,3 +40,6 @@ Il comporte :
     docker-compose stop
     docker-compose rm -v
     docker-compose up
+	
+notifications:
+  email: false
