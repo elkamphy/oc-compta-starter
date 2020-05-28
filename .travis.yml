@@ -12,7 +12,10 @@ before_script:
 
 script:
   - mvn clean install
-  - bash <(curl -s https://codecov.io/bash)
+  - sbt clean coverage test
+  
+after_success: 
+  - sbt coveralls
 
 after_script:
   # Stops running containers without removing them
