@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - oraclejdk11
+  - oraclejdk8
 
 services:
   - docker
@@ -23,3 +23,6 @@ after_script:
   - docker-compose -f docker/dev/docker-compose.yml rm -f
   # Stops containers and removes containers, networks, volumes, and images created by up
   - docker-compose -f docker/dev/docker-compose.yml down
+  
+notifications:
+  email: false

@@ -41,5 +41,3 @@ Il comporte :
     docker-compose rm -v
     docker-compose up
 	
-notifications:
-  email: false
