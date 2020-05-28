@@ -12,10 +12,9 @@ before_script:
 
 script:
   - mvn clean install
-  - sbt clean coverage test
   
 after_success: 
-  - sbt coveralls
+  - mvn clean test jacoco:report coveralls:report
 
 after_script:
   # Stops running containers without removing them
